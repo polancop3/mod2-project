@@ -1,3 +1,4 @@
+<h1>Anime and Manga api</h1>
 this projects aims to make calls to anime and manga api and retrieve episode count,title and an anime image
 
 
