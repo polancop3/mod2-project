@@ -40,16 +40,17 @@ class Anime extends React.Component {
               onChange={this.handleChange}
             >
             <label>
-              Search Anime:
+            Search anime
               <input type='text' placeholder="search anime" name="animeName"/>
             </label>
            <input type="submit" value ="search"/>
             </form>
-            {this.state.anime && <h1>{this.state.anime.results[0].title}</h1> }
+    
+            {this.state.anime && <h1 className ="title">{this.state.anime.results[0].title}</h1> }
             { this.state.anime &&
             <div className="content">
               {<img className="image" src={this.state.anime.results[0].image_url} alt ='cover'></img>}
-              <p>{this.state.anime.results[0].synopsis}</p>
+              <p className="synopsis">{this.state.anime.results[0].synopsis}</p>
               <h3>Episodes: {this.state.anime.results[0].episodes}</h3> 
             </div>
             }

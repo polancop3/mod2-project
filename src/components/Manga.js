@@ -39,18 +39,18 @@ class Manga extends React.Component {
               onChange={this.handleChange}
             >
             <label>
-              Search Manga:
+              Search manga
               <input type='text' placeholder="search manga" name="mangaName"/>
             </label>
            <input type="submit" value ="search"/>
             </form>
             
-            <h1>{this.state.manga && this.state.manga.results[0].title }</h1>
+            <h1 className ="title">{this.state.manga && this.state.manga.results[0].title }</h1>
             {this.state.manga &&
             <div className="content">
               
                 {<img className="image" src={this.state.manga.results[0].image_url} alt="cover"></img>}
-              <p>{this.state.manga.results[0].synopsis}</p>
+              <p className="synopsis">{this.state.manga.results[0].synopsis}</p>
               </div>
               } 
     

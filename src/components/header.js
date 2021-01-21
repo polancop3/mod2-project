@@ -4,7 +4,7 @@ class Header extends React.Component {
     render() {
         return (
             <div>
-                <h1>Anime Search</h1>
+                <h1 id="header">Search your favorite anime and manga!</h1>
             </div>
         )
     }

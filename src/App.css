@@ -1,7 +1,11 @@
 html {
 height: 100%;
 width: 100%;
-background-color: rgb(11, 85, 119);
+/*source of background generator https://cssgradient.io/gradient-backgrounds/ */
+background: #c31432;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: white;
 }
 li{
   list-style: none;
@@ -9,12 +13,11 @@ li{
 ul{
   display: flex;
   justify-content: space-around;
-  background-color: aquamarine;
-  padding: 40px;
+  background-color: rgb(158, 151, 175);
+  padding: 20px;
   margin-top: 0;
 }
 form{
-  background-color: brown;
   display: flex;
   justify-content: center;
 }
@@ -30,16 +33,32 @@ form{
 }
 
 img{
+  margin-top: 20px;
   height: 200px;
   width: 150px;
 }
 h1{
   text-align: center;
 }
-p {
+.synopsis {
   width: 300px;
   margin-left: 10px;
 }
 h3{
-  margin-top: 150px;
+  
+}
+#footer {
+position: absolute;
+bottom: 0;
+width: 100%;
+height: 50px;
+background-color:rgb(158, 151, 175);
+color: black;
+}
+#header{
+  text-decoration: underline black;
+  font-family: 'Times New Roman', Times, serif;
+}
+.title{
+  font-family: fantasy;
 }
